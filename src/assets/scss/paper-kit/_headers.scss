@@ -178,20 +178,21 @@ video{
     border-radius: 0cm;
 }
 
+.content-header-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    position: relative;
+    top: -170px;
+}
+
 .content-left {
-    float: left;
-    padding-top: 0px;
-    margin-top: -170px;
-    padding-left: 176px;
-    margin-bottom: 0;
-    padding-bottom: 0;
+
 }
 
 .content-right {
-    margin-top: 400px;
-    margin-left: 450px;
-    margin-bottom: 0;
-    padding-bottom: 0;
+
 }
 
 @keyframes letterJump {
@@ -593,10 +594,35 @@ video{
     width: 900px;
     height: 900px;
     position: relative;
-    left: 330px;
-    bottom: 660px;
+
     z-index: 105;
 }
 
+
+@media (min-width: 915px) {
+    .content-mobile {
+        display: none;
+    }
+}
+
+@media (max-width: 914px) {
+    .content-header-1 {
+        display: none;
+    }
+    .content-mobile {
+        display: grid;
+        height: 100vh;
+        width: 100vw;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        align-items: center;
+        color: #fff;
+    }
+    .coming-soon {
+        position: relative;
+        top: -200px;
+        
+    }
+}
 
 

@@ -21,7 +21,10 @@ function PresentationHeader() {
         <div
           className="page-header section-dark"
         >
-          <div>
+          <div className="content-mobile">
+            <p className="coming-soon">Mobile View Coming Soon! until then please view on desktop only.</p>
+          </div>
+          <div className="content-header-1">
           <div className="content-left">
             <Container>
              <Col>

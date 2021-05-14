@@ -945,6 +945,27 @@
 
 }
 
+@media (max-width: 1480px) {
+    .navbar-translate {
+        position: relative;
+        left: 100px;
+    }
+}
+
+@media (max-width: 1600px) {
+    .navbar-translate {
+        position: relative;
+        left: 100px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .navbar-translate {
+        position: relative;
+        left: 200px;
+    }
+}
+
 
 @media screen and (max-width: 374px){
     .footer.footer-big{
