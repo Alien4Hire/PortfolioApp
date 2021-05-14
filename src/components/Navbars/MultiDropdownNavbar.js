@@ -68,7 +68,7 @@ function MultiDropdownNavbar() {
         <Container>
           <div className="navbar-translate">
             <NavbarBrand id="navbar-brand" to="/index" tag={Link}>
-              <img src={Logo} href="/presentation" className='HomePageLogo' alt="#" />
+              <img src={Logo} href="/" className='HomePageLogo' alt="#" />
             </NavbarBrand>
             <UncontrolledTooltip placement="bottom" target="navbar-brand">
               Hi I'm Jason, Web Developer.
@@ -189,7 +189,7 @@ function MultiDropdownNavbar() {
                   <DropdownItem to="/index" tag={Link}>
                     All Components
                   </DropdownItem>
-                  <DropdownItem to="/presentation" tag={Link}>
+                  <DropdownItem to="/" tag={Link}>
                     Presentation
                   </DropdownItem>
                   <DropdownItem

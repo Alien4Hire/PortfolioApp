@@ -7,6 +7,13 @@
         }
     }
 }
+
+.navbar-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    width: 90vw;
+}
 .navbar{
     border: $none;
     font-size: $font-size-base;

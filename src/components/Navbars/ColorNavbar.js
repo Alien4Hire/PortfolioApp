@@ -155,9 +155,9 @@ function ColorNavbar() {
         id="navbar-main"
         onMouseLeave={(e) => setMenuDropdown(false)}
       >
-        <Container>
+        <Container className="navbar-grid">
           <div className="navbar-translate">
-            <NavbarBrand id="navbar-brand" to="/presentation" tag={Link} style={{ animation: `fadeIn 3s` }}>
+            <NavbarBrand id="navbar-brand" to="/" tag={Link} style={{ animation: `fadeIn 3s` }}>
               <img src={Logo} href="" className={`HomePageLogo ${menuDropdown ? ' HomePagedroptitle' : '' }`} alt="#" />
             </NavbarBrand>
             <UncontrolledTooltip placement="bottom" target="navbar-brand" className={`HomePageLogo ${menuDropdown ? ' display-none' : '' }`}>
@@ -203,7 +203,7 @@ function ColorNavbar() {
                 <DropdownToggle 
                   className="mr-2 home-nav" 
                   color="default" 
-                  to="/presentation" 
+                  to="/" 
                   tag={Link} 
                   nav
                 >

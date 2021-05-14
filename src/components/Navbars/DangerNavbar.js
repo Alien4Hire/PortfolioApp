@@ -42,7 +42,7 @@ function WhiteNavbar() {
         <Container>
           <div className="navbar-translate">
             <NavbarBrand id="navbar-brand" to="/index" tag={Link}>
-              <img src={Logo} href="/presentation" className='HomePageLogo' alt="#" />
+              <img src={Logo} href="/" className='HomePageLogo' alt="#" />
             </NavbarBrand>
             <UncontrolledTooltip placement="bottom" target="navbar-brand">
               Hi I'm Jason, Web Developer.
@@ -64,8 +64,8 @@ function WhiteNavbar() {
           </div>
           <Collapse navbar isOpen={collapseOpen}>
             <Nav className="ml-auto" navbar>
-              <UncontrolledDropdown nav inNavbar to="/presentation">
-                <DropdownToggle className="mr-2" to="/presentation" tag={Link} color="default" nav >
+              <UncontrolledDropdown nav inNavbar to="/">
+                <DropdownToggle className="mr-2" to="/" tag={Link} color="default" nav >
                   Home
                 </DropdownToggle>
               </UncontrolledDropdown>

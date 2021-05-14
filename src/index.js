@@ -14,7 +14,7 @@
 
 import React from "react";
 import ReactDOM from "react-dom";
-import { BrowserRouter, Route, Redirect, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Redirect, Switch, Link } from "react-router-dom";
 
 // styles
 import "assets/css/bootstrap.min.css";
@@ -62,13 +62,13 @@ ReactDOM.render(
       />
       <Route path="/work" render={(props) => <Sections {...props} />} />
       <Route
-        path="/presentation"
+        path="/"
         render={(props) => <Presentation {...props} />}
       />
       {/* <Route path='/contact' render={(props) => <ConstantContact {...props} />} /> */}
       <Route path="/abouts-us" render={(props) => <About {...props} />} />
       <Route path="/about" render={(props) => <AboutUs {...props} />} />
-      <Route path="/skills" render={(props) => <Skills {...props} />} />
+      <Route path="https://github.com/Alien4Hire" render={(props) => <Link to="https://github.com/Alien4Hire" />} />
       
 
       <Route path="/test" render={(props) => <Test {...props} />} />
@@ -112,7 +112,7 @@ ReactDOM.render(
         path="/twitter-redesign"
         render={(props) => <TwitterRedesign {...props} />}
       />
-      <Redirect to="/presentation" />
+      <Redirect to="/" />
     </Switch>
   </BrowserRouter>,
   document.getElementById("root")
